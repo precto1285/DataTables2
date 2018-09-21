@@ -2,8 +2,8 @@ $(document).ready(function () {
   $('#myTable').DataTable({
     "processing": true,
     "serverSide": true,
-    "ajax": {
-      "url": "post.php",
+    "axios": {
+      "url": "https://beta.ripemetrics.com/api/fake/customers/list",
       "type": "POST"
     },
     "columns": [
